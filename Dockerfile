@@ -5,7 +5,9 @@ ENV VPN_ENDPOINT="${VPN_ENDPOINT}"
 ADD entrypoint.sh /usr/bin
 
 RUN apt-get update && \
-    apt-get install openvpn paris-traceroute tmux && \
+    apt-get install -y openvpn paris-traceroute tmux && \
+    mkdir /dev/net && \
+    mknod /dev/net/tun c 10 200 && \
     chmod +x /usr/bin/entrypoint.sh
 
 
