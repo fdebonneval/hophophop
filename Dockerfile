@@ -9,7 +9,7 @@ RUN apt-get update && \
                     mtr-tiny=0.92-1 \
                     openvpn=2.4.4-2ubuntu1.3 \
                     paris-traceroute=0.93+git20160927-1 \
-                    tmux=2.6-3ubuntu0.1 && \
+                    tmux=2.6-3ubuntu0.2 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir /dev/net && \
