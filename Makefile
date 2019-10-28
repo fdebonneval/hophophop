@@ -13,3 +13,6 @@ RUN_OPTIONS += -v ${HOME}/Dropbox/Windscribe:/vpn
 
 run:
 	docker run --rm -it $(RUN_OPTIONS) $(IMAGE)
+
+build:
+	docker build -t $(IMAGE) .
