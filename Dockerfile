@@ -11,6 +11,7 @@ RUN apt update && \
                 openvpn=2.4.4-2ubuntu1.3 \
                 paris-traceroute=0.93+git20160927-1 \
                 python3-pip=9.0.1-2.3~ubuntu1.18.04.1 \
+                runit=2.1.2-9.2ubuntu1 \
                 tmux=2.6-3ubuntu0.2 && \
     apt clean && \
     pip3 install traceflow && \
